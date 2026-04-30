@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Home</title>
+</head>
+  <style>
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+    header {
+        position: sticky;
+        background-color: #717a51;
+        text-align: center;
+        overflow: hidden;
+        color: #f3e8eb;
+        font-weight: 900;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    nav {
+        display: flex;
+        background-color: #8b5a2b; /* rgb(233, 187, 170);*/
+        overflow: hidden;
+        
+    }
+    ul {
+       display: flex;
+       list-style-type: none;
+       justify-content: space-between;
+       background-color: #8b5a2b ;
+    }
+    
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      background-color:  #8b5a2b;
+    }
+    ul li a:hover {
+       background-color: rgb(185, 127, 85);
+    }
+    
+    .dropdown-content a:hover {
+       background-color: rgb(185, 127, 85);;
+    }
+    .dropdown-content {
+        display: none; /*hide first*/
+        position:absolute;
+    }
+    .dropdown:hover .dropdown-content {
+       display: block;
+    }
+    .dropdown-content a {
+        float: none;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    main {
+      background-color: #f3e8db;
+      overflow: hidden;
+    }
+    main img {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 75px;
+      width: 35%;
+      float: left;
+    }
+
+    #wording1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #8b5a2b;
+      font-size: 30px;
+      margin-top: 100px;
+    }
+
+    #wording2  {
+      font-family: 'Patrick Hand', cursive;
+      color: white;
+      text-shadow: 3px 3px 5px #8b5a2b;
+      text-align: center;
+      font-size: 70px;
+      margin-right: 100px;
+    }
+
+    #wording3 {
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 15px;
+      text-align: justify;
+      margin-right: 100px;
+      margin-left: 40%;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #8b5a2b;
+      border-radius: 15px;
+    }
+
+    #wording4 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #8b5a2b;
+      font-size: 30px;
+      margin: 100px 30px 0px 30px;
+      line-height: 1;
+    }
+
+    #wording5 {
+      color: white;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 15px;
+      text-align: justify;
+      margin: 10px 30px 100px 30px;
+      padding: 20px;
+      background-color: #8b5a2b;
+      border-radius: 15px;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;      /* Allows items to move to next line on small screens */
+      gap: 10px;            /* Adds space between the cards */
+      justify-content: center; /* Centers the cards horizontally */
+      padding: 5px;
+    }
+
+    .card {
+      /*flex: 1 1 calc(25% - 20px); /* Adjusts to 4 items per row, minus the gap */
+      min-width: 20px;           /* Prevents cards from getting too squished */
+      text-align: center;         /* Centers the text under the image */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 5px;
+    } 
+
+    .card img {
+      width: 25%;                /* Makes image fill the card width */
+      height: auto;               /* Keeps image proportions */
+      border-radius: 4px;
+    }
+    
+  </style>
+<body>
+  <header><h1><b>The Pantry</b></h1><h1 style="size: larger;"><b>PARTNER</b></h1></header>
+  <nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Recipes</a>
+           <div class="dropdown-content"> 
+            <a href="menumalay.html">Malay Food</a>
+            <a href="#">Western</a>
+            <a href="#">Pastry</a>
+            <a href="#">Korean Food</a>
+           </div>
+           </li>
+        <li><a href="#">Supplier</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+  </nav>
+  <main>  
+    <img src="image/cat_chef_holding_spoon-removebg-preview.png" alt="Cat holding wooden spoon">
+    <div id="wording1">Welcome to</div>
+    <div id="wording2">THE PANTRY</div>
+    <div id="wording2">PARTNER</div>
+    <div id="wording3">Your Kitchen, Your Scale, Your Way! 🍲 <br> 
+    Whether you’re a Home Chef whipping up a cozy dinner for two or a Food Entrepreneur prepping for a crowd, we’ve got the secret sauce you need. Explore a world of flavors—from authentic Malay classics to buttery pastries—and watch the measurements adjust to your ambition with our Home vs. Industrial scale!
+    Need the goods? We’ve mapped out the best wet and dry suppliers across Selangor and beyond. One click, and you’re connected to the freshest ingredients in your state. Let’s get cooking!</div>
+    <br><br>
+    <div id="wording4">Ready to Level Up Your Cooking? 👩‍🍳👨‍🍳<br></div>
+    <div id="wording5"> Your Flavor: Select from Korean, Western, Malay, and more.<br>
+    Choose Your Size: Cooking for the family? Select Home Size. Feeding the neighborhood? Hit Industrial.<br>
+    Find Your Supplier: No matter where you are in Malaysia, we'll find the nearest wet and dry markets to your doorstep.</div>
+    <br>
+    <div class="flex-container">
+      <div class="card">
+        <img src="image/balqis.jpg" alt="balqis"><br>
+        <h3>Nur Balqis Binti Saifudin</h3><br>
+        <p>255465</p>
+      </div>
+  
+      <div class="card">
+        <img src="photo2.jpg" alt="qistina"><br>
+        <h3>Nurqistina Zulaikha Binti Zaprul Afandi</h3><br>
+        <p>257516</p>
+      </div>
+
+      <div class="card">
+        <img src="photo3.jpg" alt="syafiya"><br>
+        <h3>Syafiya Asy-Syahmi Binti Syahril Izwan</h3><br>
+        <p>258461</p>
+      </div>
+
+      <div class="card">
+        <img src="photo4.jpg" alt="husna"><br>
+        <h3>Wan Insyirah Husna Binti Wan Amiruddin</h3><br>
+        <p>258736</p>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
